@@ -21,4 +21,10 @@ public class BillController {
         billTagService.processBillTags();
         return "Processing bills for tags...";
     }
+
+    @PostMapping("/update-details")
+public String updateBillDetails() {
+    billTagService.updateLegislationDetails();
+    return "Started fetching detailed info for existing bills...";
+}
 }

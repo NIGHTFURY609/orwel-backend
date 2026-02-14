@@ -6,5 +6,6 @@ com\political\service\MemberService.class
 com\political\dto\CongressApiResponse.class
 com\political\model\Tag.class
 com\political\PoliticalApplication.class
+com\political\service\CommitteeService.class
 com\political\controller\MemberController.class
 com\political\repository\MemberRepository.class
