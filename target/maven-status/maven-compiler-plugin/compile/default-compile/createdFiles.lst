@@ -1,0 +1,7 @@
+com\political\entity\MemberEntity.class
+com\political\dto\CongressMemberDto.class
+com\political\service\MemberService.class
+com\political\dto\CongressApiResponse.class
+com\political\PoliticalApplication.class
+com\political\controller\MemberController.class
+com\political\repository\MemberRepository.class
