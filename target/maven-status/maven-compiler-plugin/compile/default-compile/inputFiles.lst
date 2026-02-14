@@ -1,7 +1,10 @@
 C:\jeswin coding\orwel\orwel-backend\src\main\java\com\political\dto\CongressApiResponse.java
 C:\jeswin coding\orwel\orwel-backend\src\main\java\com\political\controller\MemberController.java
+C:\jeswin coding\orwel\orwel-backend\src\main\java\com\political\service\BillTagService.java
 C:\jeswin coding\orwel\orwel-backend\src\main\java\com\political\dto\CongressMemberDto.java
 C:\jeswin coding\orwel\orwel-backend\src\main\java\com\political\service\MemberService.java
 C:\jeswin coding\orwel\orwel-backend\src\main\java\com\political\repository\MemberRepository.java
 C:\jeswin coding\orwel\orwel-backend\src\main\java\com\political\PoliticalApplication.java
 C:\jeswin coding\orwel\orwel-backend\src\main\java\com\political\entity\MemberEntity.java
+C:\jeswin coding\orwel\orwel-backend\src\main\java\com\political\controller\BillController.java
+C:\jeswin coding\orwel\orwel-backend\src\main\java\com\political\model\Tag.java
