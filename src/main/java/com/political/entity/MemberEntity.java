@@ -1,6 +1,5 @@
 package com.political.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import jakarta.persistence.Column;
@@ -14,12 +13,11 @@ import jakarta.persistence.Table;
 @Table(name = "members")
 public class MemberEntity {
 
-    // Primary key (exists in DB but never exposed in JSON)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "mem_id")
-    @JsonIgnore
-    private Long memId;
+    @JsonProperty(value = "mem_id", access = JsonProperty.Access.READ_ONLY) 
+    private Integer memId; // Declared as Integer
 
     @Column(name = "f_name", nullable = false)
     private String fName;
@@ -38,8 +36,11 @@ public class MemberEntity {
 
     public MemberEntity() {}
 
-    // Getters
-    public Long getMemId() { return memId; }
+    // FIX: Changed return type from Long to Integer to match the field
+    @JsonProperty("mem_id")
+    public Integer getMemId() { 
+        return memId; 
+    }
 
     @JsonProperty("f_name")
     public String getFName() { return fName; }

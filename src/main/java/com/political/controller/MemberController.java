@@ -16,10 +16,10 @@ public class MemberController {
         this.memberService = memberService;
     }
 
-    // Changed to POST since we are writing data to the DB
     @PostMapping("/sync")
     public String syncMembers() {
-        memberService.fetchAndSaveCurrentMembers();
+        // Updated the method call to match the new service method name
+        memberService.fetchAndLinkMembers();
         return "Successfully fetched members from API and saved to the database!";
     }
 }
